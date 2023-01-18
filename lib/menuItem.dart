@@ -36,7 +36,7 @@ class MenuItemAdi extends StatelessWidget implements MenuItemBase {
                               ],
                             ),
                           ),
-                          Expanded(
+                          Center(
                             child: _routeWidget(),
                           ),
                         ],
@@ -63,13 +63,16 @@ class MenuSubMenu extends StatelessWidget implements MenuItemBase {
   MenuSubMenu(this._title, this._menuItems);
 
   Widget build(BuildContext context) => ListTile(
-      title: Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Text(
-            _title,
-            style: TextStyle(fontWeight: FontWeight.bold),
-          )),
-      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-          //
-          builder: (context) => Scaffold(body: MenuSand(_title, _menuItems)))));
+        title: Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Text(
+              _title,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            )),
+        onTap: () => Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => Scaffold(body: MenuSand(_title, _menuItems)),
+          ),
+        ),
+      );
 }

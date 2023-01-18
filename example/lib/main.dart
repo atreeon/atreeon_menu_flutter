@@ -46,7 +46,11 @@ class MyHomePage extends StatelessWidget {
               )
             ],
           ),
-          MenuItemAdi("A page with no scaffold and menu", () => APage(), false),
+          MenuItemAdi(
+            "A page with no scaffold and menu",
+            () => Center(child: APage()),
+            false,
+          ),
         ],
       );
 }

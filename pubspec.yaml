@@ -2,10 +2,10 @@ name: atreeon_menu_flutter
 description: Displays a series of menus based on single pages for demoing purposes.
 repository: https://github.com/atreeon/atreeon_menu_flutter
 homepage: https://atreeon.com
-version: 0.1.0
+version: 0.1.0+1
 
 environment:
-  sdk: ">=2.17.0-0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
